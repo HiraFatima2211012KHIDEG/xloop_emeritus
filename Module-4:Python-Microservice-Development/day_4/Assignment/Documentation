@@ -1,0 +1,21 @@
+*** Basic Idea ***
+I have to test that if i add data in first database, it shouldn't be appear into the second one. two apps have there separate database.
+
+*** Purpose ***
+while working on some software or project, when the software is in production and users are using it. If i want to make any change in the software or want to update it like changing logo, adding a new feature etc. so to do this i will work on my local machine and test it on my server, when it works fine, i'll down the software production server and then up that server to update it with newer changes.
+
+
+Step 1: docker compose up --scale app=2 --scale db=2 -d
+	#compose up the docker_compose.yml file andcreate 2 instances of db and app which i have defind in docker_compose.yml file
+	
+Step 2: docker ps 
+	# checking the newly create instances of containers and check there posts and names
+
+Step 3: Tested it through UI, shown in 03_.png and 04_.png
+
+Step 4: Tested it through terminal
+	- docker exec -it [container-name] bash  #entered into the terminal of the container of db
+	- psql -U test  #to enter into databse terminal to test it
+	- \dn	#database name
+	- \dt [database-name].*  # to show all the tables in that databse
+	- select * from [table-name]  # to show all the data in that table.

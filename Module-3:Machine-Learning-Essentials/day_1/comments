@@ -1,0 +1,6 @@
+Comments: Mostly correct solution :) You missed following points:
+
+* testing could have been improved a bit (but it's mostly good :))
+
+* [best practices] your `label_encoder` function is responsible for more than one thing – it would be good to eg. have separate function for transforming a single column
+* [best practices] you could have added an assertion to verify the correctness of passed columns' names

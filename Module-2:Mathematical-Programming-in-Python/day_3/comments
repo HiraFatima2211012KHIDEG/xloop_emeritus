@@ -1,0 +1,6 @@
+Comments: Good job! The code is self-explanatory so no additional comments are needed this time.
+As a feedback:
+- try to stick with just snake case (and camel-case for the classes).
+- grouping by Species and aggregating with sepal length (a minor error in the description).
+
+Keep pushing!

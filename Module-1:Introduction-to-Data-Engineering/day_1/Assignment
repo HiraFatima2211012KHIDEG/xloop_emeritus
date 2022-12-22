@@ -1,0 +1,9 @@
+43 10 * * * rsync -av /home/hirafatima/tasks/assignment.log /home/hirafatima/xloop
+
+in the above line of code i have copied a file named "assignmnet.log"  which is located in the sub directory, to the other folder named "xloop". 
+
+rsync will copy the file and save in cache as well in order to fast copy the file for the next time. 
+
+it will backup this file everyday at 10:43am. I used default  values for the date_of_month month and day_of_week which means it backup the file everyday.
+
+
