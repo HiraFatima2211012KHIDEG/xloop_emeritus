@@ -1,5 +1,0 @@
-$ touch dockerfile # created dockerfile in the direcctory.
-$ nano dockerfile  # edited the dockerfile that i have created. and wrote the commands to install pandas 
-$ docker build -t hira_image . #to build the image named "hira_image", it will install pandas
-$ docker run -d --name hira_con hira_image # created the container from "hira_image"
-$ docker run -p 8889:8889 -e NOTEBOOK_ARGS=--port=8889 hira_image # this command will run the image named "hira_image" at port 8889 at"Jupyter Lab" because I build that on jupyter/minimal-notebook
